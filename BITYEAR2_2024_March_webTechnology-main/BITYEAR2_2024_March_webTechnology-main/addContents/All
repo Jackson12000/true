@@ -1,0 +1,63 @@
+Video
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+Audio
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+Image as slider
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Slider</title>
+  <style>
+    .slider {
+      width: 100%; /* Adjust width as needed */
+      overflow: hidden; /* This hides overflowing content */
+      position: relative; /* Allows absolute positioning for images */
+    }
+
+    .slider img {
+      width: 100%; /* Ensures images fill the slider width */
+      position: absolute; /* Positions images on top of each other */
+      animation: slideShow 5s infinite linear; /* Animation properties */
+    }
+
+    @keyframes slideShow {
+      0% {
+        opacity: 1; /* Start with 100% opacity for first image */
+      }
+      25% {
+        opacity: 1; /* Maintain opacity for first image during transition */
+      }
+      50% {
+        opacity: 0; /* Fade out first image */
+      }
+      75% {
+        opacity: 0; /* Keep second image hidden during transition */
+      }
+      100% {
+        opacity: 1; /* Fade in second image */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+</body>
+</html>
+

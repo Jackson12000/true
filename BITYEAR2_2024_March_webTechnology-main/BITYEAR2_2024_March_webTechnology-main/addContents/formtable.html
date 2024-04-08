@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form in the table </title>
+</head>
+<style type="text/css">
+	
+
+</style>
+<body>
+<header style="font: Arial Rounded  MT Bold; font-size: 22;">
+	<div style="display: flex; align-items: center;">
+
+    <div>  <img src="./image/logo.jpeg" width="100" height="35" alt="Logo">
+    </div>
+
+    <div style="display: flex; flex: 1;">  <div>  <a href="allInOne.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="code.html">Code</a>
+        <a href="table.html">Table</a>
+        <a href="form.html">Form</a>
+        <a href="formtable.html">Form2</a>
+         <a href="audio.html">Audio</a>
+         <a href="video.html">Video</a>
+         <a href="images.html">Image</a>
+      </div>
+
+      <div style="flex: 1; text-align: right;">
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+<hr>
+<main style="color:grey;">
+    <center>
+ <section">
+     <form action="#" method="POST">
+         <h1>Student information</h1>
+         <table style="font-size: 22;"> 
+             <tr>
+                 <td> <label for="id">Id</label></td>
+                 <td>  <input type="text" name="id" id=id placeholder="Student id"></td>
+             </tr>
+             <tr>
+                 <td> <label for="fname">First name</label> </td>
+                 <td><input type="text" name="fname" id=fname placeholder="First name"></td>
+             </tr>
+             <tr>
+                 <td><label for="lname">Last name</label></td>
+                 <td><input type="text" name="lname" id=lname placeholder="Last name"></td>
+             </tr>
+                
+      <tr>
+            <td> <label for="lname">Geder</label> </td>
+           <td>  <select name="gender">
+             <option value="male">Male</option> 
+             <option value="female">Female</option>   
+            </select></td>
+        </tr>
+        <tr>
+            <td> <label for="phone">Phone number</label> </td>
+            <td> <input type="text" name="phone" id=phone placeholder="Ex.:0788888888"></td>
+        </tr>
+         <tr>
+            <td> <label for="email">Email</label> </td>
+            <td> <input type="email" name="email" id=email placeholder="Ex. john@ur.ac.rw"></td>
+        </tr>
+         <tr>
+           <td>  <label for="pwd">Password</label> </td>
+            <td> <input type="Password" name="pwd" id=pwd placeholder="Ex. xxxxxxxxxx"></td>
+       </tr>
+        <tr>
+        <td> <b>Size:</b></td>
+    <td> <input type="radio" id="size-small" name="size" value="small">
+    <label for="size-small">Small</label>
+    <input type="radio" id="size-medium" name="size" value="medium">
+    <label for="size-medium">Medium</label>
+    <input type="radio" id="size-large" name="size" value="large">
+    <label for="size-large">Large</label></td> 
+       </tr>
+        <tr>
+        <td> <input type="submit" name="sumbit" value="Submit"></td>
+        <td> <input type="submit" name="Cancel" value="Cancel"></td>
+        </tr>
+        </table>
+     </form>
+ </section>
+ </center>
+</main>
+<hr>
+<footer>
+	<center> UR CBE B BIT &copy, 2024 &reg</center>
+</footer>
+</body>
+</html> 
